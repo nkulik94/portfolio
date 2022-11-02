@@ -2,11 +2,14 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import UnderConstruction from './components/UnderConstruction';
+import Header from './components/Header';
 
 function App() {
 
   const app = (
+    <>
     <Switch>
+      <Header />
       <Route exact path='/'>
         <div></div>
       </Route>
@@ -14,6 +17,7 @@ function App() {
         <h1>Test</h1>
       </Route>
     </Switch>
+    </>
   )
   return (
     <>
