@@ -8,7 +8,7 @@ function App() {
   const app = (
     <Switch>
       <Route exact path='/'>
-        <UnderConstruction />
+        <div></div>
       </Route>
       <Route path='/test'>
         <h1>Test</h1>
@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <CssBaseline />
-      {app}
+      {process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test' ? app : <UnderConstruction />}
     </>
   );
 }
