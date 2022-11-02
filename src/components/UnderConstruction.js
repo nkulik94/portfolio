@@ -8,7 +8,7 @@ function UnderConstruction() {
         <Container>
             <Box sx={{textAlign: 'center', marginTop: '50px'}}>
                 <Typography variant='h1'>Under Construction</Typography>
-                <Typography variant='h6'>This website is still in the works.</Typography>
+                <Typography variant='h6'>naftalikulik.com is still in the works.</Typography>
                 <Typography variant='h6'>To learn more about me, or to contact me, connect on <Link href='https://www.linkedin.com/in/naftali-kulik-se/'>LinkedIn</Link></Typography>
                 <img src="https://media.giphy.com/media/q0eh4TU8OMXRu/giphy.gif" />
             </Box>
