@@ -1,19 +1,26 @@
 import React, { useEffect, useState } from "react";
-import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import ProjectCard from "./ProjectCard";
 
 function Projects() {
-    const [projects, setProjetcs] = useState([])
+    const [projects, setProjects] = useState([])
 
     useEffect(() => {
-        fetch('http://127.0.0.1:3000/projects')
+        fetch('https://portfolio-backend-production-f7fa.up.railway.app/projects')
         .then(r => r.json())
-        .then(setProjetcs)
+        .then(setProjects)
     }, [])
-    
-    return (
-        <Box>
 
-        </Box>
+    return (
+        <Grid container spacing={2} sx={{width: '80%', margin: 'auto'}}>
+            {projects.map(project => {
+                return (
+                    <Grid item xs={4} key={project.id}>
+                        <ProjectCard project={project} />
+                    </Grid>
+                )
+            })}
+        </Grid>
     )
 }
 
