@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import UnderConstruction from './components/UnderConstruction';
 import Header from './components/Header';
+import Projects from './components/Projects';
 
 function App() {
 
@@ -13,8 +14,8 @@ function App() {
       <Route exact path='/'>
         <div></div>
       </Route>
-      <Route path='/test'>
-        <h1>Test</h1>
+      <Route path='/projects'>
+        <Projects />
       </Route>
     </Switch>
     </>

@@ -5,12 +5,11 @@ import NavBar from "./NavBar";
 import Paper from "@mui/material/Paper";
 
 function Header() {
+
     return (
         <Container>
             <ShortBio />
-            {/* <Paper sx={{width: 'fit-content', margin: 'auto', padding: '2%'}}> */}
-                <NavBar />
-            {/* </Paper> */}
+            <NavBar />
         </Container>
     )
 }

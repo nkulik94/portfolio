@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 const linkStyles = {
@@ -23,7 +22,7 @@ function NavBar() {
                     borderBottom: '2px solid lightblue',
                 }}
             >
-                <Typography>About</Typography>
+                About
             </NavLink>
             <NavLink
             to="/projects"
