@@ -9,8 +9,8 @@ function App() {
 
   const app = (
     <>
+    <Header />
     <Switch>
-      <Header />
       <Route exact path='/'>
         <div></div>
       </Route>
