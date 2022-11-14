@@ -8,6 +8,7 @@ function ProjectCard({ project }) {
             <CardMedia
             component='iframe'
             src={project.demo_embed_link}
+            allowFullScreen
             />
         </Card>
     )
