@@ -12,10 +12,10 @@ function Projects() {
     }, [])
 
     return (
-        <Grid container spacing={2} sx={{width: '80%', margin: 'auto'}}>
+        <Grid container spacing={2} sx={{marginTop: '1rem', marginBottom: '1rem'}}>
             {projects.map(project => {
                 return (
-                    <Grid item xs={4} key={project.id}>
+                    <Grid item sx={{margin: 'auto'}} key={project.id}>
                         <ProjectCard project={project} />
                     </Grid>
                 )
