@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as RouterLink } from 'react-router-dom';
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
@@ -13,7 +14,7 @@ function ProjectCard({ project }) {
         <Card sx={{padding: '1rem', maxWidth: 300}}>
             <CardMedia
             component='iframe'
-            src={project.demo_embed_link}
+            src={project.embed}
             allowFullScreen
             />
             <CardContent>
@@ -28,7 +29,7 @@ function ProjectCard({ project }) {
                 <ButtonGroup sx={{width: 'fit-content', margin: 'auto'}}>
                     <Button component={Link} href={project.github}>GitHub</Button>
                     <Button component={Link} href={project.link}>Link</Button>
-                    <Button>Details</Button>
+                    <Button component={RouterLink} to={`/projects/${project.id}`}>Details</Button>
                 </ButtonGroup>
             </CardActions>
         </Card>
