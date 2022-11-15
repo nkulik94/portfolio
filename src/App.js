@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import UnderConstruction from './components/UnderConstruction';
 import Header from './components/Header';
 import Projects from './components/Projects';
+import DetailedProject from './components/DetailedProject';
 
 function App() {
+  const [showHeader, setHeader] = useState(true)
 
   const app = (
     <>
-    <Header />
+    {showHeader ?  <Header /> : null}
     <Switch>
       <Route exact path='/'>
         <div></div>
+      </Route>
+      <Route path='/projects/:id'>
+        <DetailedProject setHeader={setHeader} />
       </Route>
       <Route path='/projects'>
         <Projects />
