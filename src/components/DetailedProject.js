@@ -6,6 +6,12 @@ function DetailedProject({ setHeader }) {
     const params = useParams()
 
     useEffect(() => {
+        fetch(`https://portfolio-backend-production-f7fa.up.railway.app/projects/${params.id}`)
+        .then(r => r.json())
+        .then(console.log)
+    }, [])
+
+    useEffect(() => {
         setHeader(false)
 
         return () => setHeader(true)

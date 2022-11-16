@@ -11,7 +11,7 @@ function ShortBio() {
             <Typography variant='h6'>Full Stack Software Engineer</Typography>
             <Typography variant='title'>Skills: JavaScript | React | Ruby | Rails | SQL</Typography>
             <br/>
-            <Typography variant="title">Currently Learning: Python, AWS</Typography>
+            <Typography variant="title">Currently Learning: React Native, Python</Typography>
         </Box>
     )
 }

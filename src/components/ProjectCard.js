@@ -27,8 +27,8 @@ function ProjectCard({ project }) {
             </CardContent>
             <CardActions>
                 <ButtonGroup sx={{width: 'fit-content', margin: 'auto'}}>
-                    <Button component={Link} href={project.github}>GitHub</Button>
-                    <Button component={Link} href={project.link}>Link</Button>
+                    <Button component={Link} href={project.github} target='_blank'>GitHub</Button>
+                    <Button component={Link} href={project.link} target='_blank'>Link</Button>
                     <Button component={RouterLink} to={`/projects/${project.id}`}>Details</Button>
                 </ButtonGroup>
             </CardActions>
