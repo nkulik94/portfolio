@@ -60,6 +60,7 @@ function DetailedProject({ setHeader }) {
                 <br/>
                 <br/>
                 <DemoEmbeds demos={project.embed_links}/>
+                <div dangerouslySetInnerHTML={{__html: project.description}}/>
             </Paper>
         </Container>
     )
