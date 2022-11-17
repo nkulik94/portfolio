@@ -12,7 +12,10 @@ import '@fontsource/roboto/700.css';
 
 let theme = createTheme({
   palette: {
-    mode: 'dark'
+    mode: 'dark',
+    background: {
+      paper: 'rgba(0,0,0,.7)'
+    }
   }
 })
 

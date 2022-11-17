@@ -30,7 +30,7 @@ function DetailedProject({ setHeader }) {
 
     return (
         <Container sx={{padding: '3rem'}}>
-            <Paper sx={{textAlign: 'center', padding: '2rem', position: 'relative', backgroundColor: 'rgba(0,0,0,.7)'}}>
+            <Paper sx={{textAlign: 'center', padding: '2rem', position: 'relative'}}>
                 <Button
                 startIcon={<ArrowBackIcon />}
                 sx={{position: 'absolute', top: 0, left: 0}}
