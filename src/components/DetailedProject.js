@@ -40,6 +40,16 @@ function DetailedProject({ setHeader }) {
                     Back to Projects
                 </Button>
                 <Typography variant='h2'>{project.title}</Typography>
+                <br/>
+                <Typography
+                variant="h6"
+                component={Link}
+                href={project.github}
+                target="_blank">
+                    GitHub Repo
+                </Typography>
+                <br/>
+                <br/>
                 <Link href={project.link} target="_blank">
                     <Box
                     component="img"
@@ -47,6 +57,8 @@ function DetailedProject({ setHeader }) {
                     sx={{width: 500, margin: 'auto'}}
                     />
                 </Link>
+                <br/>
+                <br/>
                 <DemoEmbeds demos={project.embed_links}/>
             </Paper>
         </Container>

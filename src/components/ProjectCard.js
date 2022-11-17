@@ -11,7 +11,7 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 
 function ProjectCard({ project }) {
     return (
-        <Card sx={{padding: '1rem', maxWidth: 300}}>
+        <Card sx={{padding: '1rem', maxWidth: 300, backgroundColor: 'rgba(0,0,0,.7)'}}>
             <CardMedia
             component='iframe'
             src={project.embed}
