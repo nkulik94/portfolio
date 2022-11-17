@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import UnderConstruction from './components/UnderConstruction';
@@ -8,6 +8,10 @@ import DetailedProject from './components/DetailedProject';
 
 function App() {
   const [showHeader, setHeader] = useState(true)
+
+  useEffect(() => {
+    fetch('https://portfolio-backend-production-f7fa.up.railway.app/wakeup')
+  }, [])
 
   const app = (
     <>
