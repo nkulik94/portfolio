@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <CssBaseline />
-      {process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test' ? app : <UnderConstruction />}
+      {process.env.NODE_ENV === 'production' ? <UnderConstruction /> : app}
     </>
   );
 }

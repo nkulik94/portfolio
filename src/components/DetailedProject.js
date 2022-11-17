@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import DemoEmbeds from "./DemoEmbeds";
 
 function DetailedProject({ setHeader }) {
     const params = useParams()
@@ -26,12 +27,10 @@ function DetailedProject({ setHeader }) {
 
     if (!project) return <div></div>
     console.log(project)
- 
-    //return <Link component={RouterLink} to='/projects'>Projects</Link>
 
     return (
         <Container sx={{padding: '3rem'}}>
-            <Paper sx={{textAlign: 'center', padding: '2rem', position: 'relative'}}>
+            <Paper sx={{textAlign: 'center', padding: '2rem', position: 'relative', backgroundColor: 'rgba(0,0,0,.7)'}}>
                 <Button
                 startIcon={<ArrowBackIcon />}
                 sx={{position: 'absolute', top: 0, left: 0}}
@@ -41,11 +40,14 @@ function DetailedProject({ setHeader }) {
                     Back to Projects
                 </Button>
                 <Typography variant='h2'>{project.title}</Typography>
-                <Box
-                component="img"
-                src={project.thumbnail}
-                sx={{width: 500, margin: 'auto'}}
-                />
+                <Link href={project.link} target="_blank">
+                    <Box
+                    component="img"
+                    src={project.thumbnail}
+                    sx={{width: 500, margin: 'auto'}}
+                    />
+                </Link>
+                <DemoEmbeds demos={project.embed_links}/>
             </Paper>
         </Container>
     )
