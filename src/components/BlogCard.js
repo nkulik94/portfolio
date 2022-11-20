@@ -14,7 +14,6 @@ function BlogCard({ post }) {
             maxWidth: 275,
             textDecoration: 'none'
         }}
-        
         component={Link}
         href={post.link}
         target="_blank"
