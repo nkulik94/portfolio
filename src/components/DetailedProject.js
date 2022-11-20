@@ -26,7 +26,6 @@ function DetailedProject({ setHeader }) {
     }, [])
 
     if (!project) return <div></div>
-    console.log(project)
 
     return (
         <Container sx={{padding: '3rem'}}>

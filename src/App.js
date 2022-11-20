@@ -5,6 +5,7 @@ import UnderConstruction from './components/UnderConstruction';
 import Header from './components/Header';
 import Projects from './components/Projects';
 import DetailedProject from './components/DetailedProject';
+import Blog from './components/Blog';
 
 function App() {
   const [showHeader, setHeader] = useState(true)
@@ -25,6 +26,9 @@ function App() {
       </Route>
       <Route path='/projects'>
         <Projects />
+      </Route>
+      <Route path='/blog'>
+        <Blog />
       </Route>
     </Switch>
     </>
