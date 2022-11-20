@@ -14,7 +14,7 @@ function Blog() {
 
     return (
         <Container>
-            <Grid container spacing={2} sx={{padding: '1.5rem'}}>
+            <Grid container spacing={2} sx={{padding: '1.5rem'}} justifyContent='center'>
                 {blogs.map(post => <BlogCard post={post} key={post.guid}/>)}
             </Grid>
         </Container>

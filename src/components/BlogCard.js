@@ -11,10 +11,10 @@ function BlogCard({ post }) {
         <Grid
         item
         sx={{
-            maxWidth: 200,
+            maxWidth: 275,
             textDecoration: 'none'
         }}
-        xs={3}
+        
         component={Link}
         href={post.link}
         target="_blank"
