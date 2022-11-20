@@ -8,9 +8,18 @@ import Link from "@mui/material/Link";
 
 function BlogCard({ post }) {
     return (
-        <Grid item sx={{maxWidth: 200, margin: 'auto'}} xs={3}>
-            <Link href={post.link} sx={{textDecoration: 'none'}} target="_blank">
-            <Card>
+        <Grid
+        item
+        sx={{
+            maxWidth: 200,
+            textDecoration: 'none'
+        }}
+        xs={3}
+        component={Link}
+        href={post.link}
+        target="_blank"
+        >
+            <Card sx={{height: '100%'}}>
                 <CardMedia component='img' src={post.thumbnail}/>
                 <CardContent>
                     <strong><Typography variant="title">{post.title}</Typography></strong>
@@ -19,7 +28,6 @@ function BlogCard({ post }) {
                     <Typography variant="body"><strong>Categories:</strong> {post.categories.join(', ')}</Typography>
                 </CardContent>
             </Card>
-            </Link>
         </Grid>
     )
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
 import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 
 function Blog() {
     const [blogs, setBlogs] = useState([])
@@ -12,9 +13,11 @@ function Blog() {
     }, [])
 
     return (
-        <Grid container spacing={2}>
-            {blogs.map(post => <BlogCard post={post} key={post.guid}/>)}
-        </Grid>
+        <Container>
+            <Grid container spacing={2} sx={{padding: '1.5rem'}}>
+                {blogs.map(post => <BlogCard post={post} key={post.guid}/>)}
+            </Grid>
+        </Container>
     )
 }
 

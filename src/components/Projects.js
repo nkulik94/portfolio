@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
 import ProjectCard from "./ProjectCard";
+import { Container } from "@mui/material";
 
 function Projects() {
     const [projects, setProjects] = useState([])
@@ -12,10 +13,10 @@ function Projects() {
     }, [])
 
     return (
-        <Grid container spacing={2} sx={{marginTop: '1rem', marginBottom: '1rem'}}>
+        <Grid container spacing={2} sx={{marginTop: '1rem', marginBottom: '1rem', textAlign: 'center'}} justifyContent='center'>
             {projects.map(project => {
                 return (
-                    <Grid item sx={{margin: 'auto'}} key={project.id}>
+                    <Grid item key={project.id}>
                         <ProjectCard project={project} />
                     </Grid>
                 )
