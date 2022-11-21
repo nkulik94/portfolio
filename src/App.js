@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
-import UnderConstruction from './components/UnderConstruction';
+//import UnderConstruction from './components/UnderConstruction';
 import Header from './components/Header';
 import Projects from './components/Projects';
 import DetailedProject from './components/DetailedProject';
@@ -37,7 +37,8 @@ function App() {
   return (
     <>
       <CssBaseline />
-      {process.env.NODE_ENV === 'production' ? <UnderConstruction /> : app}
+      {/* {process.env.NODE_ENV === 'production' ? <UnderConstruction /> : app} */}
+      {app}
     </>
   );
 }
