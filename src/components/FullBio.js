@@ -18,12 +18,6 @@ function FullBio() {
                 in the field.
             </Typography>
             <br/>
-            <Typography variant="body" component='p'>
-                In my non-dev life I'm a proud husband and dad of two little boys. In my free time
-                I enjoy reading (sci-fi/fantasy mostly) and following NFL football and MLB baseball.
-                (O's and Ravens. I may live in New Jersey now but you can't forget your roots so easily!)
-            </Typography>
-            <br/>
             <Typography variant="body" component="p">
                 To get in touch, <Link href='mailto:naftalikulikse@gmail.com'>email me</Link>{' '}
                 (naftalikulikse@gmail.com) or connect with me on <Link href="https://www.linkedin.com/in/naftali-kulik-se/" target='_blank'>LinkedIn</Link>.
