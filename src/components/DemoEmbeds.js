@@ -4,10 +4,10 @@ import Box from "@mui/material/Box";
 
 function DemoEmbeds({ demos }) {
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} justifyContent='center'>
             {demos.map(demo => {
                 return (
-                    <Grid item key={demo} sx={{margin: 'auto'}}>
+                    <Grid item key={demo}>
                         <Box
                         component="iframe"
                         src={demo}
