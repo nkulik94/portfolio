@@ -1,14 +1,11 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Paper from "@mui/material/Paper";
+import FullBio from "./FullBio";
 
 function About() {
     return (
-        <Container>
-            <Paper>
-                
-            </Paper>
+        <Container sx={{width: '80%', padding: '1rem'}}>
+            <FullBio />
         </Container>
     )
 }

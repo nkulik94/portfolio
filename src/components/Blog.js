@@ -18,14 +18,13 @@ function Blog() {
     return (
         <Container>
             <Box sx={{textAlign: 'center', padding: '1rem'}}>
-                <Typography variant="h4">Technical Blog</Typography>
                 <Typography
                 variant='h6'
                 component={Link}
                 href='https://medium.com/@nkulik'
                 target='_blank'
                 >
-                    See Medium Profile
+                    See Full Medium Profile
                 </Typography>
             </Box>
             <Grid container spacing={2} sx={{padding: '1.5rem'}} justifyContent='center'>

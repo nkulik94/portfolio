@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Projects from './components/Projects';
 import DetailedProject from './components/DetailedProject';
 import Blog from './components/Blog';
+import About from './components/About';
 
 function App() {
   const [showHeader, setHeader] = useState(true)
@@ -19,7 +20,7 @@ function App() {
     {showHeader ?  <Header /> : null}
     <Switch>
       <Route exact path='/'>
-        <div></div>
+        <About />
       </Route>
       <Route path='/projects/:id'>
         <DetailedProject setHeader={setHeader} />
