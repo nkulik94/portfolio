@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import DemoEmbeds from "./DemoEmbeds";
+import Loading from './Loading'
 
 function DetailedProject({ setHeader }) {
     const params = useParams()
@@ -25,7 +26,7 @@ function DetailedProject({ setHeader }) {
         return () => setHeader(true)
     }, [])
 
-    if (!project) return <div></div>
+    if (!project) return <Loading content={"Project"} />
 
     return (
         <Container sx={{padding: '3rem'}}>
@@ -53,7 +54,7 @@ function DetailedProject({ setHeader }) {
                     <Box
                     component="img"
                     src={project.thumbnail}
-                    sx={{width: 500, margin: 'auto'}}
+                    sx={{width: '50%', margin: 'auto'}}
                     />
                 </Link>
                 <br/>
