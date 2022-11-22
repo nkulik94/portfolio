@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
 import ProjectCard from "./ProjectCard";
-import { Container } from "@mui/material";
+import Loading from "./Loading";
 
 function Projects() {
-    const [projects, setProjects] = useState([])
+    const [projects, setProjects] = useState(null)
 
     useEffect(() => {
         fetch('https://portfolio-backend-production-f7fa.up.railway.app/projects')
@@ -14,13 +14,19 @@ function Projects() {
 
     return (
         <Grid container spacing={2} sx={{marginTop: '1rem', marginBottom: '1rem', textAlign: 'center'}} justifyContent='center'>
-            {projects.map(project => {
-                return (
-                    <Grid item key={project.id}>
-                        <ProjectCard project={project} />
-                    </Grid>
-                )
-            })}
+            {
+                projects
+                ?
+                projects.map(project => {
+                    return (
+                        <Grid item key={project.id}>
+                            <ProjectCard project={project} />
+                        </Grid>
+                    )
+                })
+                :
+                <Loading content={"Projects"} />
+            }
         </Grid>
     )
 }

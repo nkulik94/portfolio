@@ -5,9 +5,10 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
+import Loading from "./Loading";
 
 function Blog() {
-    const [blogs, setBlogs] = useState([])
+    const [blogs, setBlogs] = useState(null)
 
     useEffect(() => {
         fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40nkulik')
@@ -27,9 +28,15 @@ function Blog() {
                     See Full Medium Profile
                 </Typography>
             </Box>
-            <Grid container spacing={2} sx={{padding: '1.5rem'}} justifyContent='center'>
-                {blogs.map(post => <BlogCard post={post} key={post.guid}/>)}
-            </Grid>
+            {
+                blogs
+                ? 
+                <Grid container spacing={2} sx={{padding: '1.5rem'}} justifyContent='center'>
+                    {blogs.map(post => <BlogCard post={post} key={post.guid}/>)}
+                </Grid>
+                :
+                <Loading content={"Blog Posts"} />
+            }
         </Container>
     )
 }
