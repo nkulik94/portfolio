@@ -19,6 +19,10 @@ let theme = createTheme({
   }
 })
 
+// text: {
+//   primary: '#ffe082'
+// }
+
 theme = responsiveFontSizes(theme);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

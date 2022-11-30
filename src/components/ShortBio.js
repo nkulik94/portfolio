@@ -12,9 +12,9 @@ function ShortBio() {
             </Link>
             <Typography variant="h4">Naftali Kulik</Typography>
             <Typography variant='h6'>Full Stack Software Engineer</Typography>
-            <Typography variant='title'>Skills: JavaScript | React | Ruby | Rails | SQL</Typography>
+            <Typography variant='title'>Skills: JavaScript | React | Ruby | Rails | Python | SQL</Typography>
             <br/>
-            <Typography variant="title">Currently Learning: React Native, Python</Typography>
+            <Typography variant="title">Currently Learning: AWS</Typography>
         </Box>
     )
 }
