@@ -22,11 +22,11 @@ function FullBio() {
                 To get in touch, <Link href='mailto:naftalikulikse@gmail.com'>email me</Link>{' '}
                 (naftalikulikse@gmail.com) or connect with me on <Link href="https://www.linkedin.com/in/naftali-kulik-se/" target='_blank'>LinkedIn</Link>.
             </Typography>
-            <br/>
+            {/* <br/>
             <Typography variant="body" component="p">
                 I'm looking for a job, so don't be shy if you'd like to see my resume or you know of
                 an open position which may be a fit!
-            </Typography>
+            </Typography> */}
             <br />
             <Typography variant="body" component="p">
                 The code for this website is <Link href='https://github.com/nkulik94/portfolio' target="_blank">here</Link>{' '}
