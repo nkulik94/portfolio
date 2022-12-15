@@ -9,7 +9,7 @@ function FullBio() {
         <Paper sx={{padding: '1rem'}}>
             <Typography variant='h4'>Bio:</Typography>
             <Typography variant="body" component='p'>
-                I am currently a Software developer for Senior Planning Services in Lakewwod, NJ.
+                I am currently a Software developer for Senior Planning Services in Lakewood, NJ.
             </Typography>
             <Typography variant="body" component='p'>
                 Before taking my current job, I completed Flatiron School's Software Engineering
