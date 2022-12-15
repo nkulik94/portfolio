@@ -11,7 +11,7 @@ function ShortBio() {
                 <Avatar sx={{height: '150px', width: '150px', margin: 'auto'}} src='https://i.ibb.co/Fq8L1h4/Whats-App-Image-2022-11-06-at-8-04-05-AM.jpg' />
             </Link>
             <Typography variant="h4">Naftali Kulik</Typography>
-            <Typography variant='h6'>Full Stack Software Engineer</Typography>
+            <Typography variant='h6'>Software Developer at Senior Planning Services</Typography>
             <Typography variant='title'>Skills: JavaScript | React | Ruby | Rails | Python | SQL</Typography>
             <br/>
             <Typography variant="title">Currently Learning: AWS</Typography>

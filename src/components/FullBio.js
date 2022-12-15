@@ -9,7 +9,10 @@ function FullBio() {
         <Paper sx={{padding: '1rem'}}>
             <Typography variant='h4'>Bio:</Typography>
             <Typography variant="body" component='p'>
-                I am a recent graduate of Flatiron School's Software Engineering
+                I am currently a Software developer for Senior Planning Services in Lakewwod, NJ.
+            </Typography>
+            <Typography variant="body" component='p'>
+                Before taking my current job, I completed Flatiron School's Software Engineering
                 program, during which I acquired the skills to be a successful programmer
                 and gained proficiency in JavaScript, React, and Ruby on Rails. I have applied
                 that knowledge to develop and deploy several projects, the best of which are
