@@ -10,6 +10,7 @@ function FullBio() {
             <Typography variant='h4'>Bio:</Typography>
             <Typography variant="body" component='p'>
                 I am currently a Software developer for Senior Planning Services in Lakewood, NJ.
+                My job involves writing Python code when I can and manipulating QuickBase when I must.
             </Typography>
             <Typography variant="body" component='p'>
                 Before taking my current job, I completed Flatiron School's Software Engineering
