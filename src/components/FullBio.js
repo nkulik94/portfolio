@@ -9,7 +9,7 @@ function FullBio() {
         <Paper sx={{padding: '1rem'}}>
             <Typography variant='h4'>Bio:</Typography>
             <Typography variant="body" component='p'>
-                I am currently a Software developer for BLVD Software Solutions in Lakewood, NJ,
+                I am currently a Software Developer for BLVD Software Solutions in Lakewood, NJ,
                 a company which develops and maintains software for several companies,
                 which include Senior Planning Services, Navigaid, Medcheck and others. My job
                 involves writing Python code when I can and manipulating QuickBase when I must.
