@@ -12,6 +12,7 @@ function FullBio() {
                 I am currently a Software developer for BLVD Software Solutions in Lakewood, NJ.
                 My job involves writing Python code when I can and manipulating QuickBase when I must.
             </Typography>
+            <br/>
             <Typography variant="body" component='p'>
                 Before taking my current job, I completed Flatiron School's Software Engineering
                 program, during which I acquired the skills to be a successful programmer
