@@ -13,14 +13,14 @@ function App() {
 
   useEffect(() => {
     fetch('https://portfolio-backend-production-f7fa.up.railway.app/wakeup')
-    const body = {
-      method: 'POST',
-      headers: {
-        "Content-Type":"application/json"
-      },
-      body: JSON.stringify({project: 'test', alert: 'hi'})
-    }
-    fetch('https://alertme.up.railway.app/nkulik', body)
+//     const body = {
+//       method: 'POST',
+//       headers: {
+//         "Content-Type":"application/json"
+//       },
+//       body: JSON.stringify({project: 'test', alert: 'hi'})
+//     }
+//     fetch('https://alertme.up.railway.app/nkulik', body)
   }, [])
 
   const app = (
