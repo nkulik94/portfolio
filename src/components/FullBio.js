@@ -9,10 +9,9 @@ function FullBio() {
         <Paper sx={{padding: '1rem'}}>
             <Typography variant='h4'>Bio:</Typography>
             <Typography variant="body" component='p'>
-                I am currently a Software Developer for BLVD Software Solutions in Lakewood, NJ,
-                a company which develops and maintains software for several companies,
-                which include Senior Planning Services, Navigaid, Medcheck and others. My job
-                involves writing Python code when I can and manipulating QuickBase when I must.
+                I am the lead Software Developer on the software integrations team for 100 Boulevard Management in Lakewood, NJ.
+                Our team is responsible for developing deploying, and maintaining microservices which leverage 3rd party
+                software integrations to automate workflows for several companies, including <Link href="https://www.seniorplanning.com/">Senior Planning Services</Link>, <Link href="https://www.spscs.com/">SPS Community Solutions</Link>, <Link href="https://www.medcheckusa.com/">Medcheck USA</Link> and others.
             </Typography>
             <br/>
             <Typography variant="body" component='p'>
