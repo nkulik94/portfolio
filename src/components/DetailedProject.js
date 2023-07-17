@@ -9,15 +9,14 @@ import Button from "@mui/material/Button";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import DemoEmbeds from "./DemoEmbeds";
 import Loading from './Loading'
+import projects from "../projects";
 
 function DetailedProject({ setHeader }) {
     const params = useParams()
     const [project, setProject] = useState(null)
 
     useEffect(() => {
-        fetch(`https://portfolio-backend-production-f7fa.up.railway.app/projects/${params.id}`)
-        .then(r => r.json())
-        .then(setProject)
+        setProject(projects.find(project => project.id == params.id))
     }, [])
 
     useEffect(() => {
@@ -59,7 +58,7 @@ function DetailedProject({ setHeader }) {
                 </Link>
                 <br/>
                 <br/>
-                <DemoEmbeds demos={project.embed_links}/>
+                <DemoEmbeds demos={project.demo_embed_link.split('|')}/>
                 <div dangerouslySetInnerHTML={{__html: project.description}}/>
             </Paper>
         </Container>

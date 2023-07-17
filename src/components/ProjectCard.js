@@ -14,7 +14,7 @@ function ProjectCard({ project }) {
         <Card sx={{padding: '1rem', maxWidth: 300}}>
             <CardMedia
             component='iframe'
-            src={project.embed}
+            src={project.demo_embed_link.split('|')[0]}
             allowFullScreen
             />
             <CardContent>

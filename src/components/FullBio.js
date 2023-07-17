@@ -36,7 +36,7 @@ function FullBio() {
             <br />
             <Typography variant="body" component="p">
                 The code for this website is <Link href='https://github.com/nkulik94/portfolio' target="_blank">here</Link>{' '}
-                if you're interested in that kind of thing. There's also a <Link href='https://github.com/nkulik94/portfolio-backend' target="_blank">backend</Link>, although it's not much.
+                if you're interested in that kind of thing. I don't use this <Link href='https://github.com/nkulik94/portfolio-backend' target="_blank">backend</Link> any more, because Railway wanted to charge me.
             </Typography>
         </Paper>
     )
