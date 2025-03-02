@@ -17,8 +17,7 @@ function FullBio() {
             <Typography variant="body" component='p'>
                 I work as a software developer for 100 Boulevard Management where I am responsible for building, deploying, and maintaning
                 various integrations which leverage 3rd-party API to automate workflows and streamline processes for the various companies
-                under the 100 Boulevard Mangement conglomerate, which include <Link href="https://www.seniorplanning.com/">Senior Planning Services</Link>,
-                <Link href="https://www.spscs.com/">SPS Community Solutions</Link>, <Link href="https://scstrusts.org/">SCS Trusts</Link> and
+                under the 100 Boulevard Mangement conglomerate, which include <Link href="https://www.seniorplanning.com/">Senior Planning Services</Link>, <Link href="https://www.spscs.com/">SPS Community Solutions</Link>, <Link href="https://scstrusts.org/">SCS Trusts</Link> and
                 others. I have also done work on larger, self-contained projects as needed, including API development and some frontend work.
             </Typography>
             <br/>
