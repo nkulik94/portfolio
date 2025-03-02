@@ -11,7 +11,7 @@ function ShortBio() {
                 <Avatar sx={{height: '150px', width: '150px', margin: 'auto'}} src='https://i.ibb.co/Fq8L1h4/Whats-App-Image-2022-11-06-at-8-04-05-AM.jpg' />
             </Link>
             <Typography variant="h4">Naftali Kulik</Typography>
-            <Typography variant='h6'>Lead Integrations Developer for 100 Boulevard Management</Typography>
+            <Typography variant='h6'>Software Developer/Integrations Specialist for 100 Boulevard Management</Typography>
             <Typography variant='title'>Currently Working With: Python | API integrations | AWS | Infrastructure as Code (Terraform)</Typography>
             <br/>
             <Typography variant="title">Other Skills: JavaScript | React | Ruby on Rails | SQL</Typography>
