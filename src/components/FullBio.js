@@ -9,9 +9,17 @@ function FullBio() {
         <Paper sx={{padding: '1rem'}}>
             <Typography variant='h4'>Bio:</Typography>
             <Typography variant="body" component='p'>
-                I am the lead Software Developer on the software integrations team for 100 Boulevard Management in Lakewood, NJ.
-                Our team is responsible for developing deploying, and maintaining microservices which leverage 3rd party
-                software integrations to automate workflows for several companies, including <Link href="https://www.seniorplanning.com/">Senior Planning Services</Link>, <Link href="https://www.spscs.com/">SPS Community Solutions</Link>, <Link href="https://www.medcheckusa.com/">Medcheck USA</Link> and others.
+                I am a Software Engineer with a proven track record of delivering clean, maintainable software solutions for business
+                needs and rapidly improving and adapting my skills to what's needed for the project at hand. I have consistenly displayed
+                the aptitude to devise creative yet simple solutions regardless of previous experience with the technology it requires.
+            </Typography>
+            <br/>
+            <Typography variant="body" component='p'>
+                I work as a software developer for 100 Boulevard Management where I am responsible for building, deploying, and maintaning
+                various integrations which leverage 3rd-party API to automate workflows and streamline processes for the various companies
+                under the 100 Boulevard Mangement conglomerate, which include <Link href="https://www.seniorplanning.com/">Senior Planning Services</Link>,
+                <Link href="https://www.spscs.com/">SPS Community Solutions</Link>, <Link href="https://scstrusts.org/">SCS Trusts</Link> and
+                others. I have also done work on larger, self-contained projects as needed, including API development and some frontend work.
             </Typography>
             <br/>
             <Typography variant="body" component='p'>
